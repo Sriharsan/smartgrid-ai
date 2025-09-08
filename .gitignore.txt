@@ -1,0 +1,18 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore IDE/editor configs
+.vscode/
+.idea/
+
+# Ignore artifacts unless you want to commit demo results
+artifacts/*.npy
+artifacts/*.json
+artifacts/*.csv
+artifacts/*.txt
+
+# Ignore system files
+.DS_Store
+Thumbs.db
