@@ -54,7 +54,19 @@ def lstm_forecast_train_eval(series, look_back=48, epochs=10, steps=24):
         for i in range(len(data) - lb):
             X.append(data[i:i + lb])
             y.append(data[i + lb])
-        return np.array(X), np.array(y)
+        X = np.array(X)
+        y = np.array(y)
+        # Safety check for empty arrays
+        if len(X) == 0:
+            raise ValueError(f"Not enough data to create sequences. Need at least {lb + 1} data points.")
+    
+        # Reshape X to 3D: (samples, timesteps, features) 
+        if len(X.shape) == 2:
+            X = X.reshape(X.shape[0], X.shape[1], 1)
+        elif len(X.shape) == 1:
+            X = X.reshape(1, -1, 1)
+    
+        return X, y
 
     # Split
     test_size = steps

@@ -1,0 +1,30 @@
+{
+  "problem_text": "Our demand forecasting has high MAPE values and poor accuracy. How can we improve the LSTM model performance?",
+  "detected_categories": [
+    "forecast_accuracy"
+  ],
+  "timestamp": "2025-09-23T01:46:52.549773",
+  "solutions": {
+    "forecast_accuracy": {
+      "analysis": "Analyzing forecast performance metrics...",
+      "current_performance": {
+        "mape": 0.9632900627959526,
+        "rmse": 0.3414787884440851
+      },
+      "recommendations": [
+        "Excellent MAPE (0.96%). Maintain current approach."
+      ],
+      "actions": []
+    }
+  },
+  "overall_recommendations": [
+    "Implement high-priority actions first for maximum impact",
+    "Monitor system performance after each change",
+    "Consider integrated solutions that address multiple issues"
+  ],
+  "priority_actions": {
+    "high_priority": [],
+    "medium_priority": [],
+    "low_priority": []
+  }
+}
