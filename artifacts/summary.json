@@ -3,10 +3,7 @@
     "mape": 0.9632900627959526,
     "rmse": 0.3414787884440851
   },
-  "stability": {
-    "accuracy": 1.0,
-    "f1_weighted": 1.0
-  },
+  "stability": {},
   "dispatch": {
     "renewable_share_pct": 22.779383879638118,
     "shed_pct": 10.000000090837764
